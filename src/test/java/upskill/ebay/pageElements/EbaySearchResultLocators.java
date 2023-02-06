@@ -17,4 +17,15 @@ public class EbaySearchResultLocators {
 	@FindBy(xpath="//span[2][contains(text(), 'Pants')]")
 	public WebElement txtPants;
 	
+	//Checkbox Brand Adidas
+	@FindBy(xpath="//input[@aria-label='adidas']")
+	public WebElement cbxBrandAdidas;
+
+	//Checkbox Brand Nike
+	@FindBy(xpath="//input[@aria-label='Nike']")
+	public WebElement cbxBrandNike;
+
+	//Checkbox Brand Unbranded
+	@FindBy(xpath="//input[@aria-label='Unbranded']")
+	public WebElement cbxBrandUnbranded;
 }
