@@ -20,4 +20,11 @@ public class EbayHomePageLocators {
 	//Locators using without Page Factory
 	public WebElement btnSearch2 = SetupDrivers.driver.findElement(By.xpath("//input[contains(@value, 'Search')]"));
 		
+	//My Ebay Link
+	@FindBy(xpath="")
+	public WebElement linkMyEbay;
+	
+	//Summary
+	@FindBy(xpath="")
+	public WebElement linkSummary;
 }

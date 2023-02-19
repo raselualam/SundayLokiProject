@@ -1,7 +1,7 @@
 package upskill.ebay.pageAction;
 
-import org.junit.Assert;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import upskill.ebay.pageElements.EbaySearchResultLocators;
 import upskill.utilities.SetupDrivers;
@@ -73,5 +73,9 @@ public class EbaySearchResultActions {
 		}  else {
 			System.out.println("Brand not found");
 		}
+	}
+	
+	public void selectCottonTee(){
+		EbaySearchResultLocatorsObj.linkShirtItems.click();
 	}
 }
