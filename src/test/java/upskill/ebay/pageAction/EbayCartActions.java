@@ -4,6 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import upskill.ebay.pageElements.EbayCartLocators;
+import upskill.utilities.ReadExcelSheet;
 import upskill.utilities.SetupDrivers;
 
 public class EbayCartActions {
@@ -23,27 +24,31 @@ public class EbayCartActions {
 	
 	public void selectSizeTypeDD() throws Exception{
 		Select dropDown = new Select(EbayCartLocatorsObj.ddSizeType);
-		dropDown.selectByVisibleText("Big & Tall");
+//		dropDown.selectByVisibleText("Big & Tall");
+		dropDown.selectByVisibleText(ReadExcelSheet.getMapData("Size"));
 		Thread.sleep(2000);
 	}
 	
 	public void selectMenSizeDD() throws Exception{
 		Select dropDown = new Select(EbayCartLocatorsObj.ddMenSize);
 //		dropDown.selectByVisibleText("8XLT");
-		dropDown.selectByIndex(5);
+		dropDown.selectByVisibleText(ReadExcelSheet.getMapData("MenSize"));
+//		dropDown.selectByIndex(5);
 		Thread.sleep(2000);
 	}
 	
 	public void selectShadeDD() throws Exception{
 		Select dropDown = new Select(EbayCartLocatorsObj.ddShade);
 //		dropDown.selectByVisibleText("Black");
-		dropDown.selectByValue("15");
+		dropDown.selectByVisibleText(ReadExcelSheet.getMapData("Shade"));
+//		dropDown.selectByValue("15");
 		Thread.sleep(2000);
 	}
 	
 	public void enterQuantity() throws Exception{
 		EbayCartLocatorsObj.txtbxQty.clear();
-		EbayCartLocatorsObj.txtbxQty.sendKeys("2");
+//		EbayCartLocatorsObj.txtbxQty.sendKeys("2");
+		EbayCartLocatorsObj.txtbxQty.sendKeys(ReadExcelSheet.getMapData("Quantity"));
 		Thread.sleep(2000);
 	}
 	
