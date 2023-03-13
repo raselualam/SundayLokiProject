@@ -9,7 +9,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import java.io.File;
 
 public class PetstoreRestAssuredActions {
-
+	
 	public void createPet(){
 		
 		given().														//Request Payload
