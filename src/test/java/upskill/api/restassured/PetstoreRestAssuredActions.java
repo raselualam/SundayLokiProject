@@ -59,7 +59,7 @@ public class PetstoreRestAssuredActions {
 	}
 	
 	public void deletePet(){
-		given().														//Request Payload
+		given().														//Request Pay load
 		when().															//Setting the Header & Request url
 			header("Content-Type", "application/json").
 			delete("https://petstore.swagger.io/v2/pet/4567").
